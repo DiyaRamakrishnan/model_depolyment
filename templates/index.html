@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,9 +7,12 @@
 <body>
     <h1>Polyp Detection</h1>
     <form action="/predict" method="post" enctype="multipart/form-data">
+        <!-- Lazy Loaded Image Input -->
         <input type="file" name="image" accept="image/jpeg">
         <button type="submit">Predict</button>
     </form>
+
+    <!-- Lazy Loaded Image (Replace 'placeholder.jpg' with your actual placeholder) -->
+    <img src="placeholder.jpg" data-src="image.jpg" alt="Description" loading="lazy">
 </body>
 </html>
-
