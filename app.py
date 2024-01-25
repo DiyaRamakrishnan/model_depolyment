@@ -43,4 +43,4 @@ def predict():
         return render_template('result.html', result=result, probability=prediction[0][0])
 
 if __name__ == '__main__':
-    app.run(host = "0.0.0.0", port=0000, debug=True)
+    app.run(host = "0.0.0.0", port=45811, debug=True)
