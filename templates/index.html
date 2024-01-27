@@ -67,49 +67,16 @@
         button:hover {
             background-color: #1a3b4d;
         }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .corner-image {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            max-width: 150px;
-            border: 5px solid #2d5a77;
-            border-radius: 10px;
-            margin: 10px;
-        }
-
-        .caption {
-            text-align: center;
-            color: #2d5a77;
-            font-size: 1rem;
-            margin-top: 10px;
-        }
     </style>
 </head>
 <body>
     <h1>Polyp Detection</h1>
-    <p>Hi there! Welcome to this polyp detection website. Please upload your colonoscopy images.</p>
+    <p>Hi there! Welcome to this polyp detection website. Please upload your colonoscopy images in JPG format.</p>
     <form action="/predict" method="post" enctype="multipart/form-data">
         <label for="image">Choose an Image</label>
         <input type="file" name="image" id="image" accept="image/jpeg">
         <button type="submit">Predict</button>
     </form>
-
-    <!-- Lazy Loaded Image (Replace 'placeholder.jpg' with your actual placeholder) -->
-    <img src="images/test_polyps_%20(85).jpg" data-src="image.jpg" alt="Polyp Detection" loading="lazy">
-
-    <!-- Corner Image with Border and Caption -->
-    <div class="corner-image">
-        <img src="images/test_polyps_%20(85).jpg" alt="Polyp Example">
-    </div>
 
     <p class="caption">This is an image of a colonoscopy with a polyp.</p>
 </body>
