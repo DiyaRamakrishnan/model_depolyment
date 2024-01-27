@@ -96,7 +96,7 @@
 </head>
 <body>
     <h1>Polyp Detection</h1>
-    <p>Hi there! Welcome to this polyp detection website. Please upload your colonoscopy images in JPG format.</p>
+    <p>Hi there! Welcome to this polyp detection website. Please upload your colonoscopy images.</p>
     <form action="/predict" method="post" enctype="multipart/form-data">
         <label for="image">Choose an Image</label>
         <input type="file" name="image" id="image" accept="image/jpeg">
@@ -104,11 +104,11 @@
     </form>
 
     <!-- Lazy Loaded Image (Replace 'placeholder.jpg' with your actual placeholder) -->
-    <img src="placeholder.jpg" data-src="image.jpg" alt="Polyp Detection" loading="lazy">
+    <img src="images/test_polyps_ (85).jpg" data-src="image.jpg" alt="Polyp Detection" loading="lazy">
 
     <!-- Corner Image with Border and Caption -->
     <div class="corner-image">
-        <img src="file:///Users/raja/Downloads/archive%20(4)/test/2_polyps/test_polyps_%20(85).jpg" alt="Polyp Example">
+        <img src="images/test_polyps_ (85).jpg" alt="Polyp Example">
     </div>
 
     <p class="caption">This is an image of a colonoscopy with a polyp.</p>
