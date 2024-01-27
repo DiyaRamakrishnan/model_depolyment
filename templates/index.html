@@ -6,8 +6,8 @@
     <title>Polyp Detection</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
             display: flex;
@@ -20,10 +20,17 @@
         h1 {
             color: #2d5a77;
             text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+            margin-bottom: 30px;
         }
 
         form {
-            margin-top: 20px;
             text-align: center;
         }
 
@@ -34,10 +41,11 @@
         label {
             background-color: #2d5a77;
             color: white;
-            padding: 10px 20px;
+            padding: 15px 30px;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 8px;
             transition: background-color 0.3s ease;
+            font-size: 1.2rem;
         }
 
         label:hover {
@@ -47,11 +55,13 @@
         button {
             background-color: #2d5a77;
             color: white;
-            padding: 10px 20px;
+            padding: 15px 30px;
             cursor: pointer;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             transition: background-color 0.3s ease;
+            font-size: 1.2rem;
+            margin-left: 10px;
         }
 
         button:hover {
@@ -61,15 +71,15 @@
         img {
             max-width: 100%;
             height: auto;
-            margin-top: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
     <h1>Polyp Detection</h1>
-    <p style="text-align: center; color: #555;">Hi! This website is designed to detect polyps in the colon. Please upload your images in JPG format.</p>
+    <p>Hi there! Welcome to this polyp detection website. Please upload your colonoscopy images in JPG format.</p>
     <form action="/predict" method="post" enctype="multipart/form-data">
         <label for="image">Choose an Image</label>
         <input type="file" name="image" id="image" accept="image/jpeg">
