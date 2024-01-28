@@ -9,7 +9,7 @@
 
     <header style="background-color: #2d5a77; padding: 20px; color: white; text-align: center;">
         <div style="display: flex; justify-content: space-between; align-items: center;">
-            <h1 style="margin: 0; font-size: 2rem;">Polyp Detection</h1>
+            <h1 style="margin: 0; font-size: 2rem;">PolypDetect</h1>
         </div>
     </header>
 
@@ -19,6 +19,13 @@
             <h2 style="color: #2d5a77;">Result</h2>
             <p>Polyp Detected: {{ result }}</p>
             <p>Probability: {{ probability }}</p>
+
+            {% if grad_cam_path %}
+                <h3 style="color: #2d5a77; margin-top: 20px;">Image</h3>
+                <!-- Use width instead of max-width -->
+                <img src="{{ url_for('static', filename='grad_cam_result.jpg') }}" alt="Grad-CAM Image" style="width: 25%; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            {% endif %}
+
         </section>
 
     </main>
