@@ -26,8 +26,14 @@
             <form action="/predict" method="post" enctype="multipart/form-data">
                 <label for="image" style="background-color: #2d5a77; color: white; padding: 15px 30px; cursor: pointer; border: none; border-radius: 8px; transition: background-color 0.3s ease; font-size: 1.2rem; margin-top: 10px; display: inline-block;">Choose an Image</label>
                 <input type="file" name="image" id="image" accept="image/jpeg" style="display: none;">
+                <span id="uploadMessage" style="margin-top: 10px; display: block;"></span>
                 <button type="submit" style="background-color: #2d5a77; color: white; padding: 15px 30px; cursor: pointer; border: none; border-radius: 8px; transition: background-color 0.3s ease; font-size: 1.2rem; margin-top: 10px; display: inline-block;">Detect Polyps</button>
             </form>
+            <script>
+                document.getElementById('image').addEventListener('change', function() {
+                    document.getElementById('uploadMessage').innerText = 'Please click on "Detect Polyps".';
+                });
+            </script>
         </section>
 
     </main>
