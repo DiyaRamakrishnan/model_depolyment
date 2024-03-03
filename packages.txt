@@ -1,5 +1,0 @@
-# For Debian/Ubuntu-based systems
-libgl1-mesa-glx
-
-# For Red Hat/Fedora-based systems
-mesa-libGL
