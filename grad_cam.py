@@ -37,13 +37,11 @@ def get_grad_cam(model, img_array, class_index, img_length, img_width):
 
     max_heatmap = np.max(heatmap)
     
-    # Handle the case where max_heatmap is zero
     if max_heatmap == 0:
         print("Warning: Maximum value in heatmap is zero. Setting a small value.")
-        heatmap += 1e-10  # Set a small value to avoid division by zero
-        max_heatmap = np.max(heatmap)  # Update max_heatmap
+        heatmap += 1e-10 
+        max_heatmap = np.max(heatmap)  
     
-    # Check if max_heatmap is still zero and handle it
     if max_heatmap == 0:
         print("Warning: Maximum value in heatmap is still zero. Check the model or input.")
         return None
