@@ -15,3 +15,4 @@ tensorflow-estimator==2.15.0
 tensorflow-io-gcs-filesystem==0.35.0
 Werkzeug==3.0.1
 opencv-python-headless==4.5.5.62
+matplotlib==3.5.2
